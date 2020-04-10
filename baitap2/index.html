@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS -->
+    <title>Form</title>
+</head>
+<body>
+    <div>
+        <form action="#">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="age">Tuổi:</label>
+            <input type="number" id="age" name="age" min="0" max="150" step="1" value="1">
+
+            <label for="work">Bạn đang là:</label>
+            <select name="work" id="work">
+                <option value="stu1">Học sinh</option>
+                <option value="stu2">Sinh viên</option>
+            </select><br>
+
+            <label for="gd">Giới tính:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Nam</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Nữ</label><br>
+
+            <label for="travel">Bạn thích đi du lịch ở đâu:</label><br>
+            <input type="checkbox" id="halong" name="halong">
+            <label for="halong">Vịnh Hạ Long</label><br>
+            <input type="checkbox" id="hue" name="hue">
+            <label for="hue">Huế</label><br>
+            <input type="checkbox" id="danang" name="danang">
+            <label for="Đà nẵng">Đà nẵng</label><br>
+            
+            <input type="button" onclick="alert('Đã gửi')" value="Gửi">
+        </form>
+    </div>
+</body>
+</html>
